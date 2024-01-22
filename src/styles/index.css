@@ -70,32 +70,4 @@ body {
     display: inline;
     visibility: visible;
   }
-  .card-stack {
-    position: absolute;
-    bottom: 350px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .card {
-    width: 280px;
-    height: 20px;
-    background-color: #8b2222;
-    border: 1px solid #ccc;
-    margin: 0px;
-    padding: 0px;
-    transition: transform 0.3s ease-in-out;
-  }
   
- /* styles for each card */
-.card:nth-child(1) {
-  transform: translateY(5px) translateZ(-1px);
-}
-
-.card:nth-child(2) {
-  transform: translateY(10px) translateZ(-2px);
-}
-
-.card:nth-child(3) {
-  transform: translateY(15px) translateZ(-3px);
-}
