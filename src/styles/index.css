@@ -1,12 +1,101 @@
-
-/* 
-
-    You can write your own styles here...
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(250, 250, 250) ;
+  }
+  
+  .todo-app {
+    text-align: center;
+    border: #d2d2d2;
+    background-color: white;
+    position: relative;
+  }
+  .list-title{
+    font-family:'Grape Nuts', cursive;
+    color: rgb(230, 165, 87);
+    font-size: xx-large;
+    margin: 0px;
+    background-color: rgb(250, 250, 250);
+  }
+  input {
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 300px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1; 
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    padding: 5px 5px 5px 15px;
+    margin: 0px;
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: left;
+    font-family: 'Grape Nuts', cursive;
+    font-size:xx-large;
+    color: #8a8a8a;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  }
+  
+  .pending-complete {
+    text-align: left;
+    padding: 10px;
+    font-size: smaller;
+  }
 
-*/
+  .delete-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+  }
+  
+  li:hover .delete-icon {
+    display: inline;
+    visibility: visible;
+  }
+  .card-stack {
+    position: absolute;
+    bottom: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 280px;
+    height: 20px;
+    background-color: #8b2222;
+    border: 1px solid #ccc;
+    margin: 0px;
+    padding: 0px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ /* styles for each card */
+.card:nth-child(1) {
+  transform: translateY(5px) translateZ(-1px);
+}
+
+.card:nth-child(2) {
+  transform: translateY(10px) translateZ(-2px);
+}
+
+.card:nth-child(3) {
+  transform: translateY(15px) translateZ(-3px);
+}
