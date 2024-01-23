@@ -1,73 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(250, 250, 250) ;
-  }
-  
-  .todo-app {
-    text-align: center;
-    border: #d2d2d2;
-    background-color: white;
-    position: relative;
-  }
-  .list-title{
-    font-family:'Grape Nuts', cursive;
-    color: rgb(230, 165, 87);
-    font-size: xx-large;
-    margin: 0px;
-    background-color: rgb(250, 250, 250);
-  }
-  input {
-    padding: 10px;
-    margin-bottom: 0px;
-    width: 300px;
-    font-size: 16px;
-    position: relative;
-    z-index: 1; 
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    background-color: #fff;
-    padding: 5px 5px 5px 15px;
-    margin: 0px;
-    position: relative;
-    border-bottom: 1px solid #d2d2d2;
-    text-align: left;
-    font-family: 'Grape Nuts', cursive;
-    font-size:xx-large;
-    color: #8a8a8a;
-    
-  }
-  
-  .pending-complete {
-    text-align: left;
-    padding: 10px;
-    font-size: smaller;
-  }
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+}
 
-  .delete-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: none;
-  }
-  
-  li:hover .delete-icon {
-    display: inline;
-    visibility: visible;
-  }
-  
+.todo-app {
+  text-align: center;
+  border: #d2d2d2;
+  background-color: white;
+  position: relative;
+}
+.list-title {
+  font-family: 'Grape Nuts', cursive;
+  color: rgb(230, 165, 87);
+  font-size: xx-large;
+  margin: 0px;
+  background-color: rgb(250, 250, 250);
+}
+input {
+  padding: 10px;
+  margin-bottom: 0px;
+  width: 300px;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 5px 5px 5px 15px;
+  margin: 0px;
+  position: relative;
+  border-bottom: 1px solid #d2d2d2;
+  text-align: left;
+  font-family: 'Grape Nuts', cursive;
+  font-size: xx-large;
+  color: #8a8a8a;
+}
+
+.pending-complete {
+  text-align: left;
+  padding: 10px;
+  font-size: smaller;
+}
+
+.delete-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+li:hover .delete-icon {
+  display: inline;
+  visibility: visible;
+}
